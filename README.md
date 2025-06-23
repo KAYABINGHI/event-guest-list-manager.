@@ -98,7 +98,6 @@ This project is under Moringa school. You are free to use, modify, and distribut
 
 
 ## Contact
-Contact
 
 For questions or support, reach out to:
 
