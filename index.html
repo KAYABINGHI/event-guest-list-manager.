@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Guest List Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Guest List </h1>
+  
+  <!-- Guest Counter Display -->
+  <div class="counter-display">
+    <div class="counter-item">
+      <span class="counter-number" id="totalCount">0</span>
+      <span class="counter-label">Total Guests</span>
+    </div>
+    <div class="counter-item">
+      <span class="counter-number" id="rsvpCount">0</span>
+      <span class="counter-label">RSVP'd Yes</span>
+    </div>
+  </div>
+  
+  <form id="guest-form">
+    <label for="guest-name">Guest Name:</label>
+    <input type="text" id="guest-name" placeholder="Enter guest name" required>
+    
+    <label for="guest-category">Category:</label>
+    <select id="guest-category">
+      <option value="Friend">Friend</option>
+      <option value="Family">Family</option>
+      <option value="Colleague">Colleague</option>
+    </select>
+    
+    <button type="submit">Add Guest</button>
+  </form>
+  
+  <h2 id="guest-list-title">Guest List (0/10)</h2>
+  <ul id="guest-list"></ul>
+  
+  <script src="index.js"></script>
+</body>
+</html>
